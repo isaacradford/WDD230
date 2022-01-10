@@ -1,5 +1,13 @@
 
-
 #headercontent {
     background-color: #457B9D;
+}
+
+h1 {
+    background-color: #911a20;
+    color: white;
+    font-size: 1.55em;
+    line-height: 1.1em;
+    text-align: center;
+    padding: 10px;
 }
