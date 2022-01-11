@@ -1,13 +1,90 @@
 
-#headercontent {
-    background-color: #457B9D;
+header {
+    display: grid;
+    grid-template-columns: 225px 100px 100px 100px 225px;
+    grid-template-rows: 100px 50px 50px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+    background-color: #5c70a5;
+    box-shadow: 5px 5px 3px gray;
+    border-radius: 15px;
 }
 
-h1 {
-    background-color: #911a20;
+img {
+    justify-self: center;
+    align-self: center;
+    border-radius: 15px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    width: 9em;
+    text-shadow: 1px 1px 1px gray;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 200px auto 200px 200px;
+    grid-template-rows: 200px 100px 400px 100px;
+}
+
+.header_name {
     color: white;
+    text-shadow: 4px 4px 3px gray;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+h2 {
     font-size: 1.55em;
     line-height: 1.1em;
+    padding-top: 20px;
+    text-shadow: 1px 1px 1px gray;
+    grid-row-start: 2;
+    grid-column-start:3;
+    grid-column-end: 4;
     text-align: center;
-    padding: 10px;
+} 
+
+#assignment_list {
+    font-family: 'Courier New', monospace;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    border-top: 5px double;
+
+}
+#bottom_text {
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+    grid-row-start: 4;
+    grid-column-start:2;
+    grid-column-end: 5;
+    border-top: 5px double;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 225px 100px auto 100px 225px;
+    grid-template-rows: 100px 50px 50px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 5;    
+    background-color: #5c70a5;
+    box-shadow: 5px 5px 3px gray;
+    border-radius: 15px;
+}
+
+#footer_text {
+    font-family: 'Courier New', monospace;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
 }
