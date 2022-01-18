@@ -1,6 +1,7 @@
 
 header {
     display: grid;
+    height: 200px;
     grid-template-columns: 225px 100px 100px 100px 225px;
     grid-template-rows: 100px 50px 50px;
     grid-column-start: 2;
@@ -40,10 +41,15 @@ body {
     grid-row-end: 2;
 }
 
+h1 {
+    font-size: 1.5rem;
+    margin: 0.15rem;
+}
+
 h2 {
     font-size: 1.55em;
     line-height: 1.1em;
-    padding-top: 20px;
+    margin: 0.15rem;
     text-shadow: 1px 1px 1px gray;
     grid-row-start: 2;
     grid-column-start:3;
@@ -84,6 +90,14 @@ footer {
 #footer_text {
     font-family: 'Courier New', monospace;
     color: white;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
+}
+
+#script {
+    font-family: 'Courier New', monospace;
+    color: yellow;
     grid-column-start: 1;
     grid-column-end: 6;
     text-align: center;
