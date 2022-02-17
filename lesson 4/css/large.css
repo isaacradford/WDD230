@@ -31,6 +31,17 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+  background-color: #439775;
+  opacity: 75%;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  grid-column: 4/8;
+  grid-row: 4;
+  padding: 10px;
+
+}
   .topnav {
     overflow: hidden;
     background-color: #2A4747;

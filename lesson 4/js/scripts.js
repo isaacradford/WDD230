@@ -21,7 +21,7 @@ window.onload = function dayCheck (){
   let data = document.getElementById("day")
 
 
-  if (mydate == 1 || mydate == 2 ) {
+  if (mydate == 1 || mydate == 3 ) {
     data.innerHTML = 'Mondays and Tuesdays ONLY, come in for a free consulation!'
     
   }
