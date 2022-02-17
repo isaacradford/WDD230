@@ -13,7 +13,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
 
-<script type = "text/javascript" src="js/scripts.js"></script>  
 </head>
 <header>
     <div class="topnav" id="myTopnav">
@@ -22,18 +21,18 @@
         <a href="">Contact</a>
         <a href="">About</a>
         <a class="icon" onclick="myFunction()">
-          <!-- <i class="fa fa-bars"></i> -->
            &#9776; Menu
         </a>
-
       </div>
+
+      <div class="date"></div>
     </header>
 
 <body>
 
 <div class = 'hero'>
     <p>Site name, call to action</p>
-    <h1>Mondays and Tuesdays ONLY, come in for a free consulation!</h1>
+    <h1 id='day'></h1>
 </div>
 
 <div class = 'spotlight' >
@@ -47,7 +46,58 @@
 </div>
 
 <div class = 'weather'>
-    <p>Weather</p>
+
+    <!-- weather widget start -->
+    <div id="m-booked-weather-bl250-38723"> 
+    <div class="booked-wzs-250-175 weather-customize" style="background-color:#137AE9;width:160px;" id="width1"> 
+    <div class="booked-wzs-250-175_in"> <div class="booked-wzs-250-175-data">
+    <div class="booked-wzs-250-175-left-img wrz-22"> </div> 
+    <div class="booked-wzs-250-175-right"> 
+        <div class="booked-wzs-day-deck"> 
+            <div class="booked-wzs-day-val"> 
+                <div class="booked-wzs-day-number">-5</div> 
+                <div class="booked-wzs-day-dergee"> 
+                    <div class="booked-wzs-day-dergee-val">&deg;</div> 
+                    <div class="booked-wzs-day-dergee-name">C</div> 
+                </div> 
+            </div> 
+            <div class="booked-wzs-day"> 
+                <div class="booked-wzs-day-d">H: -3&deg;</div> 
+                <div class="booked-wzs-day-n">L: -10&deg;</div> 
+            </div> </div> 
+            <div class="booked-wzs-250-175-info"> 
+                <div class="booked-wzs-250-175-city">Rexburg </div> 
+                <div class="booked-wzs-250-175-date">Wednesday, 16 February</div> 
+                <div class="booked-wzs-left"> <span class="booked-wzs-bottom-l">See 7-Day Forecast</span> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <table cellpadding="0" cellspacing="0" class="booked-wzs-table-250"> 
+        <tr> <td>Thu</td> <td>Fri</td> <td>Sat</td> <td>Sun</td> <td>Mon</td> <td>Tue</td> </tr> <tr> 
+            <td class="week-day-ico"><div class="wrz-sml wrzs-22"></div></td> 
+            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+        </tr> <tr> <td class="week-day-val">-4&deg;</td> 
+            <td class="week-day-val">-5&deg;</td> 
+            <td class="week-day-val">-4&deg;</td> 
+            <td class="week-day-val">-1&deg;</td> 
+            <td class="week-day-val">-3&deg;</td> 
+            <td class="week-day-val">-12&deg;</td> 
+        </tr> <tr> <td class="week-day-val">-9&deg;</td> 
+            <td class="week-day-val">-14&deg;</td> 
+            <td class="week-day-val">-12&deg;</td> 
+            <td class="week-day-val">-11&deg;</td> 
+            <td class="week-day-val">-11&deg;</td> 
+            <td class="week-day-val">-20&deg;</td> 
+        </tr> 
+    </table> 
+</div> 
+</div> 
+</div>
 </div>
 
 <div class = 'join'>
@@ -65,6 +115,8 @@
 
     <p id='footer_text'> &copy; 2021 .:|:. Isaac P. Radford .:|:. Idaho </p>
     <div id='script'><script src='index.js'></script></div>
+
+    <script type = "text/javascript" src="js/scripts.js"></script>  
 </footer>
 
 </html>

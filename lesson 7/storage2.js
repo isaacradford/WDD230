@@ -40,14 +40,26 @@ bgcolorForm.addEventListener('change', populateStorage);
 
 const images = document.querySelectorAll('img');
 
-const options = {threshold: [.5] }
+const options = { threshold: [1] }
+
+
+function preloadImage(img) {
+    const source = img.getAttribute('data-src');
+    img.src = source;
+}
 
 
 const io = new IntersectionObserver(
     (entries, io) =>  {
         entries.forEach(entry => {
-        console.log(entries);
-        });
+        if(entry.isIntersecting){
+            return;
+        } 
+        else {
+            preloadImage(entry.target)
+            io.unobserve(entry.target);
+        }
+    });
     }, options);
 
 

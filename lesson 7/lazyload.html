@@ -4,16 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Storage practice</title>
+    <title>Local Storage practice, Lazy Load</title>
+    <link rel='stylesheet' href='imageload.css'>
+    <!-- if you put scripts up top, you have to put defer so everything loads last -->
 </head>
 <body>
     <form>
         <div>
+            <h1>Body Color</h1>
             <label for='bgcolor'>Choose background color:</label>
             <input class = 'color' id = 'bgcolor' value = '0000FF'>
         </div>
     </form>
-    <script src="storage.js"></script>
+    
+    <picture>
+        <img src = 'https://dummyimage.com/300x400/ccc/fff' 
+        data-src = 'https://placekitten.com//3mmm00/400' 
+        alt='kittens'>
+    </picture>
+
+    <picture>
+        <img src = 'https://dummyimage.com/300x400/ccc/fff' 
+        data-src = 'https://placekitten.com//300/400' 
+        alt='kittens'>
+    </picture>
+
+    <picture>
+        <img src = 'https://dummyimage.com/300x400/ccc/fff' 
+        data-src = 'https://placekitten.com//300/400' 
+        alt='kittens'>
+    </picture>
+
+    <picture>
+        <img src = 'https://dummyimage.com/300x400/ccc/fff' 
+        data-src = 'https://placekitten.com//300/400' 
+        alt='kittens'>
+    </picture>
+
+    <picture>
+        <img src = 'https://dummyimage.com/300x400/ccc/fff' 
+        data-src = 'https://placekitten.com//300/400' 
+        alt='kittens'>
+    </picture>
+
+    <picture>
+        <img src = 'https://dummyimage.com/300x400/ccc/fff' 
+        data-src = 'https://placekitten.com//300/400' 
+        alt='kittens'>
+    </picture>
+
+    <script src = 'storage2.js'></script>
 </body>
 </html>
 
