@@ -23,17 +23,40 @@
     body {
         justify-items: stretch;
         grid-template-columns: 450px;
-        grid-template-rows: 1fr 200px 200px 200px 200px 200px 1fr;
+        grid-template-rows: 1fr 300px 200px 200px 200px 200px 1fr;
         column-gap: 10px;
         row-gap: 10px;
         padding-left: 15px;
         padding-right: 15px;
     }
 
+    h1 {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        background-color: #439775;
+        color: white;
+        opacity: 95%;
+    }
+
     .hero {
         grid-column: 1;
         grid-row: 2;
     }
+
+    .large_image {
+        display: none;
+      }
+      
+      .medium_image {
+        display: none;
+      }
+      
+      .small_image {
+        display: block;
+        grid-row: 1;
+        max-width: 450px;
+      }
 
     .event {
         grid-column: 1;

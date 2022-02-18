@@ -3,7 +3,7 @@
     body {
         /* background-color: black; */
         grid-template-columns: 300px 200px 300px;
-        grid-template-rows: 1fr 200px 200px 200px 200px 200px 1fr;
+        grid-template-rows: 1fr 268px 268px 200px 200px 200px 1fr;
         column-gap: 10px;
         row-gap: 10px;
         padding-left: 15px;
@@ -15,6 +15,27 @@
         grid-column: 1/4;
         grid-row: 2;
     }
+
+    h1 {
+        position: absolute;
+        bottom: -200px;
+        left: 0px;
+        background-color: #439775;
+        color: white;
+        opacity: 95%;
+    }
+    .large_image {
+        display: none;
+      }
+      
+      .medium_image {
+        display: block;
+        max-width: 820px;
+      }
+      
+      .small_image {
+        display: none;
+      }
 
     .news_release {
         grid-column: 1/4;
@@ -30,7 +51,6 @@
     .join {
         grid-column: 1/4;
         grid-row: 5;
-        background-color: gray;
     }
 
     .event {
