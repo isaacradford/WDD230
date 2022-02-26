@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+   
+   <style> 
+    label, input, select {display: block;}
+
+    /* table, th, td { border:1px solid black; } */
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+    }
+
+    tr:first-child th {
+        background-color: navy;
+    }    
+    tr:nth-child(odd) {
+        background-color: lightblue;
+    }
+    </style>
+
+</head>
+<body>
+    <!--the two methods are get and post, post is more secure, get is faster -->
+    <!-- name is where it stores the input for backend -->
+    <form method="get" action = 'thankyou.html'>
+        <label for = 'fname'>First Name *:</label>
+        <input id='fname' name = 'firstname' required>
+        <label for = 'pw'>Password: (only letters and at least 7 letters)</label>
+        <input id = 'pw' name = 'pw' minlength="7"
+        pattern="[-A-Za-z]+" required>
+        <!-- You can put curly brackets with a number to restrict them to that number of letters, but + is just one or more, 
+        You also just list out the characters you want to add without commas or anything like [-+=?1-9A-Za-z]-->
+        <label for = 'phone'>Phone Number:</label>
+        <input id='phone' type = 'tel' name = 'phonenum'>
+        <label id="message">Give us a message:</label>
+        <textarea id = 'message'></textarea>
+        <input type = 'hidden' value = 'CurrentDate' name = 'todaydate'>
+        <!-- hidden can help find bots cause a bot will fill in every form even if it's still hidden, called a 'honey pot' -->
+        
+
+        <p> Please select the level of membership you would like:</p>
+
+        <select for='level' name = 'memlevel'>
+
+            <option id = 'level' = 'level1'>Level 1</option>
+            <option id = 'level' = 'level2'> Level 2</option>
+            <option id = 'level' = 'level2'> Level 3</option>
+        </select>
+        <!-- w3 schools datalist with options -->
+        
+        <input type = 'submit' value = 'Submit'>
+    </form>
+
+
+    <h2>A basic HTML table</h2>
+
+    <table style="width:100%">
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+    </table>
+
+
+
+</body>
+</html>

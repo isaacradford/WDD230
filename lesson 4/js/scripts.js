@@ -1,4 +1,5 @@
-function myFunction() {
+//  Navigation Bar
+function navbar() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -7,9 +8,8 @@ function myFunction() {
   }
 }
 
-let w_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-let m_names = ['January', 'February', 'March', 'April']
 
+// Banner message for certain days
 window.onload = function dayCheck (){
   let mydate = new Date().getDay();
   console.log(mydate);
@@ -26,10 +26,9 @@ window.onload = function dayCheck (){
 };
 
 
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
 
-// derive the current date using a date object
+// Display date
+const datefield = document.querySelector(".date");
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
@@ -39,7 +38,6 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 
 
 // Weather widget
-
 var css_file=document.createElement("link"); 
 var widgetUrl = location.href; css_file.setAttribute("rel","stylesheet"); 
 css_file.setAttribute("type","text/css"); css_file.setAttribute("href",'https://s.bookcdn.com/css/w/booked-wzs-widget-275.css?v=0.0.1'); 
