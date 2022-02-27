@@ -40,12 +40,19 @@ bgcolorForm.addEventListener('change', populateStorage);
 
 const images = document.querySelectorAll('img');
 
-const options = { threshold: [1] }
+const options = { 
+    threshold: 1,
+    rootMargin: '0px 0px 300px 0px'
+ }
 
 
 function preloadImage(img) {
     const source = img.getAttribute('data-src');
     img.src = source;
+        if (!src) {
+        return;
+    }
+        img.src = src;
 }
 
 
@@ -66,3 +73,36 @@ const io = new IntersectionObserver(
 images.forEach(images => {
     io.observe(images);
 });
+
+
+// const images = document.querySelectorAll('img')
+
+// function preloadImage(img) {
+//     const src = img.getAtrribute('data-src');
+//     img.src = source;
+//     if (!src) {
+//         return;
+//     }
+
+//     img.src = src;
+// }
+
+// const imgOptions = {
+//     threshold: 1, 
+//     // rootMargin: '0px 0px -500px 0px'
+// };
+
+// const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersection) {
+//             return;
+//         } else {
+//             preLoadImage(entry.target);
+//             imgObserver.unobserve(entry.target);
+//         }
+//         })
+// }, imgOptions);
+
+// images.forEach (image => {
+//     imgObserver.observe(image);
+// });
