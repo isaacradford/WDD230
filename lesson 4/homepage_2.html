@@ -11,13 +11,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
 <title>Bank of Idaho</title>
+
+<link rel="icon" type="image/x-icon" href="/lesson 4/favicon-32x32.png">
+
+<!-- <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+    }
+</style> -->
+
 </head>
 
 <header>
+
     <div class="topnav" id="myTopnav">
-        <a href="" class="active">Bank of Idaho</a>
-        <a href="">Color Scheme</a>
-        <a href="">Contact</a>
+       
+        <a href="homepage_2.html" class="active"> 
+        <img src='Idaho.png' alt = 'logo of the Bank of Idaho' width = '20px' height = 'auto'>
+            Bank of Idaho
+        </a>
+        <a href="discover.html">Discover</a>
+        <a href="">Join</a>
         <a href="">About</a>
         <a class="icon" onclick="navbar()">
            &#9776; Menu
@@ -28,87 +43,88 @@
 </header>
 
 <body>
+    <div class = 'homepage_content'>
+        <div class = 'hero'>
+            <h1 class='image_banner'> It's About Community: </h1>
+            <img class='large_image' src='images/large_tetons.jpg' alt = 'Picture of horses underneath the Tetons.'>
+            <img class='medium_image' src='images/medium_tetons.jpg' alt = 'Picture of horses underneath the Tetons.'>
+            <img class='small_image' src='images/small_tetons.jpg'  alt = 'Picture of horses underneath the Tetons.'>
+            <h2 id='day'></h2>
+        </div>
 
-<div class = 'hero'>
-    <h1 class='image_banner'> It's About Community: </h1>
-    <img class='large_image' src='images/large_group.jpg' alt = 'Picture of a group of people in a business meeting.'>
-    <img class='medium_image' src='images/medium_group.jpg' alt = 'Picture of a group of people in a business meeting.'>
-    <img class='small_image' src='images/small_group.jpg'  alt = 'Picture of a group of people in a business meeting.'>
-    <h2 id='day'></h2>
-</div>
+        <div class = 'spotlight' >
+            <p class = 'spotlight_1'>Spotlight 1</p>
+            <p class = 'spotlight_2'>Spotlight 2</p>
+            <p class = 'spotlight_3'>Spotlight 3</p>
+        </div>
 
-<div class = 'spotlight' >
-    <p class = 'spotlight_1'>Spotlight 1</p>
-    <p class = 'spotlight_2'>Spotlight 2</p>
-    <p class = 'spotlight_3'>Spotlight 3</p>
-</div>
+        <div class = 'event'>
+            <p>Event</p>
+        </div>
 
-<div class = 'event'>
-    <p>Event</p>
-</div>
-
-<div class = 'weather'>
-    <!-- weather widget start -->
-    <div id="m-booked-weather-bl250-38723"> 
-    <div class="booked-wzs-250-175 weather-customize" style="background-color:#137AE9;width:160px;" id="width1"> 
-    <div class="booked-wzs-250-175_in"> <div class="booked-wzs-250-175-data">
-    <div class="booked-wzs-250-175-left-img wrz-22"> </div> 
-    <div class="booked-wzs-250-175-right"> 
-        <div class="booked-wzs-day-deck"> 
-            <div class="booked-wzs-day-val"> 
-                <div class="booked-wzs-day-number">-5</div> 
-                <div class="booked-wzs-day-dergee"> 
-                    <div class="booked-wzs-day-dergee-val">&deg;</div> 
-                    <div class="booked-wzs-day-dergee-name">C</div> 
+        <div class = 'weather'>
+            <!-- weather widget start -->
+            <div id="m-booked-weather-bl250-38723"> 
+            <div class="booked-wzs-250-175 weather-customize" style="background-color:#137AE9;width:160px;" id="width1"> 
+            <div class="booked-wzs-250-175_in"> <div class="booked-wzs-250-175-data">
+            <div class="booked-wzs-250-175-left-img wrz-22"> </div> 
+            <div class="booked-wzs-250-175-right"> 
+                <div class="booked-wzs-day-deck"> 
+                    <div class="booked-wzs-day-val"> 
+                        <div class="booked-wzs-day-number">-5</div> 
+                        <div class="booked-wzs-day-dergee"> 
+                            <div class="booked-wzs-day-dergee-val">&deg;</div> 
+                            <div class="booked-wzs-day-dergee-name">C</div> 
+                        </div> 
+                    </div> 
+                    <div class="booked-wzs-day"> 
+                        <div class="booked-wzs-day-d">H: -3&deg;</div> 
+                        <div class="booked-wzs-day-n">L: -10&deg;</div> 
+                    </div> </div> 
+                    <div class="booked-wzs-250-175-info"> 
+                        <div class="booked-wzs-250-175-city">Rexburg </div> 
+                        <div class="booked-wzs-250-175-date">Wednesday, 16 February</div> 
+                        <div class="booked-wzs-left"> <span class="booked-wzs-bottom-l">See 7-Day Forecast</span> 
+                        </div> 
+                    </div> 
                 </div> 
             </div> 
-            <div class="booked-wzs-day"> 
-                <div class="booked-wzs-day-d">H: -3&deg;</div> 
-                <div class="booked-wzs-day-n">L: -10&deg;</div> 
-            </div> </div> 
-            <div class="booked-wzs-250-175-info"> 
-                <div class="booked-wzs-250-175-city">Rexburg </div> 
-                <div class="booked-wzs-250-175-date">Wednesday, 16 February</div> 
-                <div class="booked-wzs-left"> <span class="booked-wzs-bottom-l">See 7-Day Forecast</span> 
-                </div> 
-            </div> 
+            <table cellpadding="0" cellspacing="0" class="booked-wzs-table-250"> 
+                <tr> <td>Thu</td> <td>Fri</td> <td>Sat</td> <td>Sun</td> <td>Mon</td> <td>Tue</td> </tr> <tr> 
+                    <td class="week-day-ico"><div class="wrz-sml wrzs-22"></div></td> 
+                    <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+                    <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+                    <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+                    <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+                    <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
+                </tr> <tr> <td class="week-day-val">-4&deg;</td> 
+                    <td class="week-day-val">-5&deg;</td> 
+                    <td class="week-day-val">-4&deg;</td> 
+                    <td class="week-day-val">-1&deg;</td> 
+                    <td class="week-day-val">-3&deg;</td> 
+                    <td class="week-day-val">-12&deg;</td> 
+                </tr> <tr> <td class="week-day-val">-9&deg;</td> 
+                    <td class="week-day-val">-14&deg;</td> 
+                    <td class="week-day-val">-12&deg;</td> 
+                    <td class="week-day-val">-11&deg;</td> 
+                    <td class="week-day-val">-11&deg;</td> 
+                    <td class="week-day-val">-20&deg;</td> 
+                </tr> 
+            </table> 
         </div> 
-    </div> 
-    <table cellpadding="0" cellspacing="0" class="booked-wzs-table-250"> 
-        <tr> <td>Thu</td> <td>Fri</td> <td>Sat</td> <td>Sun</td> <td>Mon</td> <td>Tue</td> </tr> <tr> 
-            <td class="week-day-ico"><div class="wrz-sml wrzs-22"></div></td> 
-            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
-            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
-            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
-            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
-            <td class="week-day-ico"><div class="wrz-sml wrzs-03"></div></td> 
-        </tr> <tr> <td class="week-day-val">-4&deg;</td> 
-            <td class="week-day-val">-5&deg;</td> 
-            <td class="week-day-val">-4&deg;</td> 
-            <td class="week-day-val">-1&deg;</td> 
-            <td class="week-day-val">-3&deg;</td> 
-            <td class="week-day-val">-12&deg;</td> 
-        </tr> <tr> <td class="week-day-val">-9&deg;</td> 
-            <td class="week-day-val">-14&deg;</td> 
-            <td class="week-day-val">-12&deg;</td> 
-            <td class="week-day-val">-11&deg;</td> 
-            <td class="week-day-val">-11&deg;</td> 
-            <td class="week-day-val">-20&deg;</td> 
-        </tr> 
-    </table> 
-</div> 
-</div> 
-</div>
-</div>
+        </div> 
+        </div>
+        </div>
 
-<div class = 'join'>
-    <p>Join</p>
-</div>
+        <div class = 'join'>
+            <p>Join</p>
+        </div>
 
-<div class = 'news_release'>
-    <p>News Release</p>
-</div>
+        <div class = 'news_release'>
+            <p>News Release</p>
+        </div>
 
+    </div>
 </body>
 
 <footer>
