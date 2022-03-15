@@ -1,6 +1,6 @@
 header {
 font-family: 'Open Sans', sans-serif;
-max-width: 1420px;
+width: 100%;
 /* display: block; */
 }
 
@@ -56,16 +56,17 @@ overflow: hidden;
 height: 50px;
 background-color: #2A4747;
 /* grid-column: 1/6; */
-/* padding: 10px; */
+
 }
 
 .topnav a {
-/* float: left; */
-/* display: block; */
+float: left;
+display: block;
 color: #f2f2f2;
 padding: 14px;
+text-align: center;
 text-decoration: none;
-font-size: 17px;
+font-size: 20px;
 }
 
 .topnav a:hover {
@@ -220,11 +221,90 @@ height: 400px;
 object-fit: cover;
 }
 
+.join_content {
+display: grid;
+margin: auto;
+grid-template-columns: 300px 200px 200px 200px 200px 300px;
+grid-template-rows: 1fr 880px;
+column-gap: 10px;
+row-gap: 10px;
+padding: 10px;
+}
+
+.join_banner {
+color: white;
+background-color: #439775;
+width: auto;
+grid-column: 2/6;
+grid-row: 1;
+text-align: center;
+border-radius: 15px;
+}
+
+.join_form {
+color: white;
+width:600px;
+background-color: #439775;
+grid-column: 1/4;
+grid-row: 2/3;
+margin: auto;
+text-align: center;
+border-radius: 15px;
+padding-top: 30px;
+}
+
+.benefits {
+color: white;
+background-color: #439775;
+grid-column: 3.5/6;
+grid-row: 2/3;
+width:600px;
+border-radius: 15px;
+font-size: 20px;
+}
+
+.benefits > h3, h1 {
+text-align: center;
+}
+
+label {
+font-size: 25px;
+margin: 20px;
+}
+
+input {
+display: inline-block;
+width: 250px;
+height: 20px;
+}
+
+#submit {
+background-color:#2A4747;
+color: white;
+height: 40px;
+margin: 10px;
+font-family: 'Open Sans', sans-serif;
+}
+
+select {
+    font-family: 'Open Sans', sans-serif;
+margin: auto;
+width: 300px;
+height: 30px;
+font-size: 20px;
+text-align: center;
+}
+
+textarea {
+max-width:400px;
+width: 300px;
+height: 100px;
+}
+
 .large_image {
 display: block;
 max-width: 790px;
 }
-
 
 .medium_image {
 display: none;

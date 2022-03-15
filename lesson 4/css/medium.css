@@ -215,4 +215,31 @@ height: 400px;
 object-fit: cover;
 }
 
+.join_content {
+display: grid;
+margin: auto;
+grid-template-columns: auto;
+grid-template-rows: 1fr 900px 300px 300px;
+column-gap: 10px;
+row-gap: 10px;
+}
+
+.join_form {
+margin: auto;
+grid-column: 1;
+}
+
+.join_banner {
+grid-column: 1;
+grid-row: 1;
+text-align: center;
+}
+
+.benefits {
+font-size: 14px;
+grid-column: 1;
+grid-row: 3/5;
+width: auto;
+}
+
 }

@@ -8,7 +8,6 @@ function navbar() {
   }
 }
 
-
 // Banner message for certain days
 window.onload = function dayCheck (){
   let mydate = new Date().getDay();
@@ -87,3 +86,4 @@ const imgObserver = new  IntersectionObserver((entries, imgObserver) => {
 images.forEach(image => {
   imgObserver.observe(image);
 })
+

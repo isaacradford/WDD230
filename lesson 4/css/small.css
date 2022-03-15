@@ -2,7 +2,7 @@
 .topnav a:not(:first-child) {display: none;}
 .topnav a.icon {
 float: right;
-display: flex;
+display: block;
 }
 .topnav.responsive {position: relative;}
 .topnav.responsive .icon {
@@ -234,5 +234,26 @@ margin: auto;
 width: 400px;
 height: 300px;
 object-fit: cover;
+}
+
+.join_content {
+display: grid;
+margin: auto;
+grid-template-columns: auto;
+grid-template-rows: 1fr 900px 300px 300px;
+column-gap: 10px;
+row-gap: 10px;
+}
+
+.join_form {
+margin: auto;
+grid-column: 1;
+width: 400px;
+}
+
+.benefits {
+width: auto;
+grid-column: 1;
+grid-row: 3/5;
 }
 }
