@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='css/largethank_you.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+<title>Join Us - Bank of Idaho</title>
+
+<link rel="icon" type="image/x-icon" href="/lesson 4/favicon-32x32.png">
+
+   <style> 
+    label, input, select {display: block;}
+
+    /* table, th, td { border:1px solid black; } */
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+    }
+
+    tr:first-child th {
+        background-color: navy;
+    }    
+    tr:nth-child(odd) {
+        background-color: lightblue;
+    }
+    </style>
+
+</head>
+
+<header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="homepage_2.html" class="active"> 
+        <img src='Idaho.png' alt = 'logo of the Bank of Idaho' width = '20px' height = 'auto'>
+            Bank of Idaho
+        </a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Join</a>
+        <a href="">About</a>
+        <a class="icon" onclick="navbar()">
+           &#9776; Menu
+        </a>
+      </div>
+      <div class="date"></div>
+      
+</header>
+
+<body>
+    <h1 class='discover_image_banner'>What can we do for you?</h1>
+    <img class='discover_large_image' 
+    src = 'https://dummyimage.com/1420x500/ccc/fff' 
+    data-src = 'images/discover/alex-lemoing-vQHL52Xzd3s-unsplash.jpg' 
+    alt = 'Image of downtown Boise, Idaho'>
+
+    <!--the two methods are get and post, post is more secure, get is faster -->
+    <!-- name is where it stores the input for backend -->
+
+    <div class = 'join_content'>
+        <div class = 'join_banner'>
+            <h1>Thanks for submitting!</h1>
+            <p>We look forward to working with you. It'll take us a bit to respond, but you can expect communication in the next 3 business days.
+            </br> Meanwhile, take a look at the rest of our site to see what we have to offer!
+            </p>
+        </div>
+    </div>
+</body>
+
+
+
+<footer>
+    <p id ='footer_text'>Bank of Idaho</p>
+    <p id='footer_text'> &copy; 2021 .:|:. Isaac P. Radford .:|:. Idaho </p>
+    <script src="js/scripts.js"></script>
+</footer>
+
+</html>
