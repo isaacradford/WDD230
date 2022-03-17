@@ -87,3 +87,4 @@ images.forEach(image => {
   imgObserver.observe(image);
 })
 
+// Business title cards
