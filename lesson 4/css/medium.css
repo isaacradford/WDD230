@@ -3,7 +3,7 @@
 
 .homepage_content {
 grid-template-columns: 300px 200px 300px;
-grid-template-rows: 1fr 268px 268px 200px 200px 200px 1fr;
+grid-template-rows: 1fr 268px 268px 250px 200px 200px 1fr;
 column-gap: 10px;
 row-gap: 10px;
 padding-left: 15px;
@@ -64,12 +64,12 @@ grid-row: 6;
 .spotlight_1 {
 grid-column: 1;
 grid-row: 1;
-border: dotted black;
+
 }
 .spotlight_2 {
 grid-column: 2;
 grid-row: 1;
-border: dotted black;
+
 
 }
 .spotlight_3 {
