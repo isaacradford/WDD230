@@ -1,7 +1,7 @@
 // const requestURL = '';
 function display_data_by(format) {
 
-fetch('./businesses.JSON')
+fetch('./businesses.json')
     .then(function(response) {
         return response.json();
     })
