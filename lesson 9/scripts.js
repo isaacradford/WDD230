@@ -36,8 +36,6 @@ function displayProphets (prophet) {
 
     document.querySelector('div.card_container').appendChild (card);
 
-
-
     }
 
 // let cards = document.querySelectorAll('.cards')

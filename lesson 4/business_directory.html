@@ -14,26 +14,6 @@
 
 <link rel="icon" type="image/x-icon" href="/lesson 4/favicon-32x32.png">
 
-   <style> 
-    label, input, select {display: block;}
-
-    /* table, th, td { border:1px solid black; } */
-
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 10px;
-        text-align: center;
-    }
-
-    tr:first-child th {
-        background-color: navy;
-    }    
-    tr:nth-child(odd) {
-        background-color: lightblue;
-    }
-    </style>
-
 </head>
 
 <header>
@@ -56,10 +36,30 @@
 
 
 <body>
-    <main id = 'join_content'>
-        <div class="cards"></div>
-    
+    <main>
+        
+        <div class = 'business_content'>
+            <h1 class = 'business_banner'>Proud Partners of The Bank of Idaho:</h1>
+            <p class = 'business_summary'>Here at The Bank of Idaho, we're proud to be partners with the people and businesses that are focused on leading Idaho Falls to becoming an example for the rest of the country in health, wellness, cleanliness and community.</br></br>
+            Join us in thanking them for the service they provide to our entire community.
+            </p>
+            <div class = 'buttons'>
+                <button onclick = 'display_data_by("card")'><img src = 'images/icons/outline_apps_black_24dp.png' height = 30px width='auto'></button>
+                <button onclick = 'display_data_by("table")'><img src = 'images/icons/outline_table_rows_black_24dp.png' height = 30px width='auto' ></button>
+            </div>
+            <div id = 'business_table'>
+                <!-- <table style="width:100%" id = 'table_data'>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Phone Number</th>
+                        <th>Website</th>
+                    </tr> -->
+                </table>
+            </div>
 
+            <div class = 'card_container' id = 'business_cards'>
+            </div>
+        </div>
 
     </main>
 </body>
@@ -67,7 +67,7 @@
 <footer>
     <p id ='footer_text'>Bank of Idaho</p>
     <p id='footer_text'> &copy; 2021 .:|:. Isaac P. Radford .:|:. Idaho </p>
-    <script src="js/scripts.js"></script>
+    <script src = 'js/businesses.js'></script>
 </footer>
 
 
