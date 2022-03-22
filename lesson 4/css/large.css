@@ -573,9 +573,6 @@ color: white;
 }
 
 
-/* .buttons {
-
-} */
 
 button {
 display: block;
@@ -592,6 +589,12 @@ button:hover {
 background-color:rgb(197, 197, 197)
 }
 
+#day {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #2A4747;
+    color: white;
+}
 
 footer {
 /* display: grid;
