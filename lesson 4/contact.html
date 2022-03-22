@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='css/large.css' rel='stylesheet'>
+    <link href='css/medium.css' rel='stylesheet'>
+    <link href='css/small.css' rel='stylesheet'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <title>Contact Us - Bank of Idaho</title>
+    
+    <link rel="icon" type="image/x-icon" href="/lesson 4/favicon-32x32.png">
+</head>
+
+<header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="homepage_2.html" class="active"> 
+        <img src='Idaho.png' alt = 'logo of the Bank of Idaho' width = '20px' height = 'auto'>
+            Bank of Idaho
+        </a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Join</a>
+        <a href="business_directory.html">Directory</a>
+        <a class="icon" onclick="navbar()">
+           &#9776; Menu
+        </a>
+      </div>
+      <div class="date"></div>
+      
+</header>
+
+<body>
+    <h3 class = 'contact_banner'>Meet our Board of Directors:</h3>
+    <div class = 'contact_content'>
+
+        <div class = 'bod_cards'>
+            <h4>Gianna Mueller</h4>
+            <p>Chairperson</p>
+            <img class = 'contact_img' src = 'images/bod/batel-studio-ttSRjiYG_WM-unsplash.jpg'>
+        </div>
+
+        <div class = 'bod_cards'>
+            <h4>Ryan Hoffman</h4>
+            <p>Vice-Chair</p>
+            <img class = 'contact_img' src = 'images/bod/ryan-hoffman-v7Jja2ChN6s-unsplash.jpg'>
+        </div>
+
+        <div class = 'bod_cards'>
+            <h4>Stephanie Liverani</h4>
+            <p>Secretary</p>
+            <img class = 'contact_img' src = 'images/bod/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg'>
+        </div>
+    </div>
+    
+    <div class = 'contact_page_content'>
+        <h1>Let us get to know you:</h1>
+        <p>As the Bank of Idaho Board of Directors, we want to thank you for your continued support. It not only helps us but helps grow the local community and economy,
+            and we recognize how much it means to invest in your own community. 
+        </br> </br>
+            Because of this, we'd love to hear your feedback or any comments or concerns you may have. If you have any questions, comments, concerns, let us know in this form and we'll get back to you as soon as possible!
+        </p>
+    </div>
+
+    <div class = 'contact_form'>
+
+        <form class = 'join_form' method="get" action = 'thankyou.html'>
+            <label for = 'fname'>Name *:</label>
+            <input id='fname' name = 'firstname' required>
+
+            <!-- You can put curly brackets with a number to restrict them to that number of letters, but + is just one or more, 
+            You also just list out the characters you want to add without commas or anything like [-+=?1-9A-Za-z]-->
+            <label for = 'email'>Email address *:</label>
+            <input id = 'email' type = 'email' name = 'email' required placeholder="Example@gmail.com">
+
+            <label for = 'phone' >Phone Number:</label>
+            <input id='phone' type = 'tel' name = 'phonenum' placeholder="(123) - 456 - 7891">
+
+            <label id="message">Tell us your thoughts:</label>
+            <textarea id = 'message' name = 'message'></textarea>
+
+            <input type = 'hidden' value = 'CurrentDate' name = 'todaydate'>
+            <!-- hidden can help find bots cause a bot will fill in every form even if it's still hidden, called a 'honey pot' -->
+
+            <input id = 'submit' type = 'submit' value = 'Submit'>
+        </form>
+
+
+    </div>
+</body>
+
+<footer>
+    <p id ='footer_text'>Bank of Idaho</p>
+    <p id='footer_text'> &copy; 2021 .:|:. Isaac P. Radford .:|:. Idaho </p>
+<script src="js/scripts.js"></script>
+</footer>
+
+</html>

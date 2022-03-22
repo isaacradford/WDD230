@@ -329,7 +329,7 @@ border: solid #2A4747;
 padding: 15px;
 }
 .event > h4 {
-    background-color: #2A4747;
+background-color: #2A4747;
 color: white;
 }
 
@@ -381,7 +381,7 @@ color: white;
 }
 
 .spotlight_2 {
-    text-align: center;
+text-align: center;
 grid-column: 1;
 grid-row: 2;
 background-color: rgb(209, 209, 209);
@@ -390,10 +390,10 @@ padding: 3px;
 }
 
 .spotlight_2 > h4 {
-    background-color: #2A4747;
-    color: white;
-    }
-    
+background-color: #2A4747;
+color: white;
+}
+
 .spotlight_3 {
 grid-column: 1;
 grid-row: 3;
@@ -404,16 +404,21 @@ padding: 3px;
 }
 
 .spotlight_3 > h4 {
-    background-color: #2A4747;
-    color: white;
-    }
+background-color: #2A4747;
+color: white;
+}
 
 .business_content {
 grid-template-columns: 100px 300px auto 300px 100px;
 grid-template-rows: 1fr 300px 300px 300px;
 }
 
-label, input, select {display: block;}
+label, input, select {
+    text-align: center;
+    display: flex;
+margin: auto;
+padding-top: 5px;
+}
 
 .business_banner {
 text-align: center;
@@ -468,6 +473,87 @@ justify-content: center;
 margin: auto;
 display: flex;
 flex-wrap: wrap;
+}
+
+
+.contact_content {
+display: flex;
+flex-wrap: wrap;
+/* height: 1400px;
+width: auto; */
+}
+
+.contact_img {
+width: 200px;
+height: 300px;
+object-fit: cover;
+box-shadow: 5px 5px 5px rgb(134, 134, 134);
+}
+
+.contact_banner {
+font-size: 30px;
+text-align: center;
+}
+
+.bod_cards {
+text-align: center;
+background-color:rgb(193, 193, 193);
+width: 300px;
+height: 420px;
+border-radius: 14px;
+box-shadow: 5px 5px 5px lightgray;
+
+margin-left: auto;
+margin-right: auto;
+
+border-style:ridge;
+border-width: 10px;
+}
+
+.bod_cards > h4 {
+    background-color:#439775;
+    color: white;
+}
+
+.contact_page_content {
+    margin: auto;
+    max-width: 800px;
+
+    background-color: #439775;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+box-shadow: 5px 5px 5px lightgray;
+
+}
+
+.contact_page_content > h1 {
+    background-color: #2A4747;
+    width: auto;
+    font-size: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.contact_page_content > p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact_form {
+    margin: auto;
+    max-width: 800px;
+
+    background-color: #439775;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 
