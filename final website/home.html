@@ -1,143 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='large.css' rel='stylesheet'>
-    <link href='medium.css' rel='stylesheet'>
-    <link href='small.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oxygen:wght@700&family=Spartan:wght@100;300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Isaac Radford - WDD230</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='large.css' rel='stylesheet'>
+  <link href='medium.css' rel='stylesheet'>
+  <link href='small.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oxygen:wght@700&family=Spartan:wght@100;300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Isaac Radford - WDD230</title>
 </head>
 
 <header>
 
 
-    <div class="topnav" id="myTopnav">
-        <div class = 'links'>
-          <a href="#home" class="active">Isaac Radford</a>
-          <a href="#news">Sample Packs</a>
-          <a href="#contact">Plugins</a>
-          <a href="#listen">Listen</a>
-          <a href="#about">About</a>
-        </div>
+  <div class="topnav" id="myTopnav">
+      <div class = 'links'>
+        <a href="home.html" class="active">Isaac Radford</a>
+        <a href="samplepacks.html">Sample Packs</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="listen.html">Listen</a>
+        <a href="about.html">About</a>
+      </div>
 
-      <a href="javascript:void(0);" class="icon" onclick="hamMenu()">
-        <div class="container" onclick="change(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </a>
+    <a href="javascript:void(0);" class="icon" onclick="hamMenu()">
+      <div class="container" onclick="change(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </a>
 
-    </div>
+  </div>
 </header>
 
 <body>
 
 <div class = 'banner'>
-      <div class = 'bannerBkd'>
-        <a href = '#packs'>
-        <img class = 'bannerImage' src = 'images/greg-garnhart-14JPW_P2-Cs-unsplash.jpg'>
-        </a>
-      </div>
-  <h1 class = 'bannerText' class = 'logo'>Re-discover Sound</h1>
-  <button class = 'bannerButton' href = 'samplepacks.html'>Learn More</button>
+    <div class = 'bannerBkd'>
+<!-- don't forget alt text -->
+      <a href = 'samplepacks.html'>
+        <img class = 'bannerImage' data-src = 'images/greg-garnhart-14JPW_P2-Cs-unsplash.jpg'     
+        src = 'https://dummyimage.com/1420x500/ccc/fff' alt = 'Image of large, frozen tundra with mountains in the background.'>
+      </a>
+    </div>
+<h1 class = 'bannerText' class = 'logo'>Re-discover Sound</h1>
+<!-- <a href = 'samplepacks.html'><button class = 'bannerButton' >Learn More</button></a> -->
 </div>
 
 <div class = 'bodyLinks'>
-  <a href="#news" class = 'linkChild'>Sample Packs</a>
-  <a href="#contact" class = 'linkChild'>Plugins</a>
-  <a href="#listen" class = 'linkChild'>Listen</a>
-  <a href="#about" class = 'linkChild'>About</a>
+<a href="samplepacks.html" class = 'linkChild'>Sample Packs</a>
+<a href="plugins.html" class = 'linkChild'>Plugins</a>
+<a href="listen.html" class = 'linkChild'>Listen</a>
+<a href="about.html" class = 'linkChild'>About</a>
 </div>
 
 <div class = 'bodyContent'>
-  <h1>Soundpacks:</h1>
+<h1>Sample Packs:</h1>
 
-  <div class = 'cards'>
-        <div class = 'card'>
-          <a href ='samplepacks.html'>
-            <img src = 'images/madhu-shesharam-EVZxXuOEk3w-unsplash.jpg'>
-          </a>
-            <h3>Canyon</h3>
-            <p>Discover the grand sound of Canyon: a one-of-a-kind 100 piece orchestra sampled in never before ways, all captured
-              with the intent of recreating the massive sound of one of natures greatest wonders.
-            </p>
-            <button class = 'cardButton' href = 'samplepacks.html'>More:</button>
-        </div> 
+  <div class = 'cardContent'>
+    <div class = 'cards'>
 
-        <div class = 'card'>
-          <a href ='samplepacks.html'>
-            <img src = 'images/madhu-shesharam-EVZxXuOEk3w-unsplash.jpg'>
-          </a>
-            <h3>Canyon</h3>
-            <p>Discover the grand sound of Canyon: a one-of-a-kind 100 piece orchestra sampled in never before ways, all captured
-              with the intent of recreating the massive sound of one of natures greatest wonders.
-            </p>
-            <button class = 'cardButton' href = 'samplepacks.html'>More:</button>
-        </div> 
-        
-        <div class = 'card'>
-          <a href ='samplepacks.html'>
-            <img src = 'images/madhu-shesharam-EVZxXuOEk3w-unsplash.jpg'>
-          </a>
-            <h3>Canyon</h3>
-            <p>Discover the grand sound of Canyon: a one-of-a-kind 100 piece orchestra sampled in never before ways, all captured
-              with the intent of recreating the massive sound of one of natures greatest wonders.
-            </p>
-            <button class = 'cardButton' href = 'samplepacks.html'>More:</button>
-        </div> 
-        
-        <div class = 'card'>
-          <a href ='samplepacks.html'>
-            <img src = 'images/madhu-shesharam-EVZxXuOEk3w-unsplash.jpg'>
-          </a>
-            <h3>Canyon</h3>
-            <p>Discover the grand sound of Canyon: a one-of-a-kind 100 piece orchestra sampled in never before ways, all captured
-              with the intent of recreating the massive sound of one of natures greatest wonders.
-            </p>
-            <button class = 'cardButton' href = 'samplepacks.html'>More:</button>
-        </div> 
-    </div>
+          <div class = 'card'>
+            <a href ='samplepacks.html'>
+              <img data-src = 'images/madhu-shesharam-EVZxXuOEk3w-unsplash.jpg'
+              src = 'https://dummyimage.com/1420x500/ccc/fff' alt = 'Large cavern made of red rocks with sunlight beaming through'>
+            </a>
+          </div> 
+
+          <div class = 'card'>
+            <a href ='samplepacks.html'>
+              <img src = 'https://dummyimage.com/1420x500/ccc/fff' data-src = 'images/joyce-g-0thMc80p2mA-unsplash.jpg'
+              alt = 'Image of a large, dimly lit foggy swamp'>
+            </a>
+
+          </div> 
+          
+          <div class = 'card'>
+            <a href ='samplepacks.html'>
+              <img src = 'https://dummyimage.com/1420x500/ccc/fff'
+              data-src = 'images/steady-hand-co-HlKJEp9oVOs-unsplash.jpg' 
+              alt = 'Image from the top of a tree overlooking a canyon covered in snow.'>
+            </a>
+              <!-- <h3>Canyon</h3>
+              <p>Discover the grand sound of Canyon: a one-of-a-kind 100 piece orchestra sampled in never before ways, all captured
+                with the intent of recreating the massive sound of one of natures greatest wonders.
+              </p> -->
+              <!-- <button class = 'cardButton' href = 'samplepacks.html'>More:</button> -->
+          </div> 
+          
+          <div class = 'card'>
+            <a href ='samplepacks.html'>
+              <img data-src = 'images/wolfgang-hasselmann-pVr6wvUneMk-unsplash.jpg'
+              src = 'https://dummyimage.com/1420x500/ccc/fff' 
+              alt = 'Image of red sand dunes with an orange sky.'>
+            </a>
+              <!-- <h3>Canyon</h3>
+              <p>Discover the grand sound of Canyon: a one-of-a-kind 100 piece orchestra sampled in never before ways, all captured
+                with the intent of recreating the massive sound of one of natures greatest wonders.
+              </p>
+              <button class = 'cardButton' href = 'samplepacks.html'>More:</button> -->
+          </div> 
+      </div>
+  </div>
+
+  <div class = 'homeAbout'>
+    <h3>About us:</h3>
+    <p>My name is Isaac Radford, and it's been a longtime dream of mine to make a living using my music and my sound. </br> </br>
+      In a market saturated with music content, it's hard to stand out. </br> </br> But, it's my belief that through quality, usable content 
+      and a brand focused on helping the community, that not only I, but the community as a whole can achieve not just my goal, but the goals of millions of others.
+    </p>
+  </div>
+
 </div>
 
 
 
-  
-    <h6>See more:</h6>
-  </div>
+
+</div>
 
 
-  <div class = 'homeAbout'>
-      <h3>About us:</h3>
-      <p>My name is Isaac Radford, and it's been a longtime dream of mine to make a living using my music and my sound. 
-        In a market saturated with music content, it's hard to stand out. But, it's my belief that through quality, usable content 
-        and a brand focused on helping the community, that not only I, but the community as a whole can achieve not just my goal, but the goals of millions of others.
-      </p>
-  </div>
+
+
+
+
 </div>
 
 
 </body>
 
 <footer>
-    <script>
-        function change(x) {
-          x.classList.toggle("change");
-        }
 
-        function hamMenu() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-  }
-} 
-        </script>
+  <div class = 'footer'>
+    <div class = 'footerContent'>
+    <p id='footer_text'> &copy; 2021 .:|:. Isaac P. Radford .:|:. Idaho </p>
+    <script src = 'index.js'>
+      // function change(x) {
+      //   x.classList.toggle("change");
+      // }
+      
+      // function hamMenu() {
+      // var x = document.getElementById("myTopnav");
+      // if (x.className === "topnav") {
+      //   x.className += " responsive";
+      // } else {
+      //   x.className = "topnav";
+      // }
+      // } 
+      
+      // let currentdate = document.lastModified
+      // document.write("Last Modified: " +currentdate)
+      </script>
+      </div>
+  </div>
+
+
+
 </footer>
 </html>

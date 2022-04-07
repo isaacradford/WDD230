@@ -4,10 +4,12 @@
     .topnav a.icon {
       float: right;
       display: block;
+
     }
 
     .topnav.responsive {
         position: relative;
+        padding-right: 90px;
     }
 
     .topnav.responsive a.icon {

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='large.css' rel='stylesheet'>
+  <link href='medium.css' rel='stylesheet'>
+  <link href='small.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oxygen:wght@700&family=Spartan:wght@100;300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Sample Packs - Isaac Radford</title>
+</head>
+
+<header>
+
+    <div class="topnav" id="myTopnav">
+        <div class = 'links'>
+            <a href="home.html" class="active">Isaac Radford</a>
+            <a href="samplepacks.html">Sample Packs</a>
+            <a href="plugins.html">Plugins</a>
+            <a href="listen.html">Listen</a>
+        </div>
+  
+      <a href="javascript:void(0);" class="icon" onclick="hamMenu()">
+        <div class="container" onclick="change(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+  
+    </div>
+  </header>
+
+<body>
+    <div class = 'banner'>
+        <div class = 'bannerBkd'>
+            <img class = 'bannerImage3' src = 'images/jonathan-velasquez-c1ZN57GfDB0-unsplash.jpg' alt = 'image of blurred out microphone with studio equipment in the background.'>
+        </div>
+            <h1 class = 'bannerText' class = 'logo'>Have any questions?</h1>
+            <p class = 'footnote'>Or maybe you just have some feedback. </br> </br> Either way, we'd love to hear from you!</p>
+    </div>
+
+<div class = 'aboutContent'>
+
+    <form class = 'join_form' method="get" action = 'thankyou.html'>
+        <label for = 'fname'>Name *:</label>
+        <input id='fname' name = 'firstname' required>
+
+        <label for = 'email'>Email address *:</label>
+        <input id = 'email' type = 'email' name = 'email' required placeholder="Example@gmail.com">
+
+        <label id="message">Tell us about yourself:</label>
+        <textarea id = 'message' name = 'message'></textarea>
+
+        <input type = 'hidden' value = 'CurrentDate' name = 'todaydate'>
+        <!-- hidden can help find bots cause a bot will fill in every form even if it's still hidden, called a 'honey pot' -->
+        
+        <input id = 'submit' type = 'submit' value = 'Submit'>
+    </form>
+    
+</div>
+</body>
+
+<footer>
+
+    <div class = 'footer'>
+        <div class = 'footerContent'>
+        <p id='footer_text'> &copy; 2021 .:|:. Isaac P. Radford .:|:. Idaho </p> 
+          <script>
+            function change(x) {
+              x.classList.toggle("change");
+            }
+            
+            function hamMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+            } 
+            
+            let currentdate = document.lastModified
+            document.write("Last Modified: " +currentdate)
+            </script>
+    
+            </div>
+        </div>
+      
+      
+      
+      </footer>
+</html>

@@ -1,91 +1,50 @@
-// const requestURL = '';
-function display_data_by(format) {
+// Lazy Loading
 
-    fetch('./businesses.json')
-        .then(function(response) {
-            return response.json();
-        })
-    
-        .then(function(jsonObject) {
-            console.table(jsonObject);
-            
-            document.getElementById('business_table').innerHTML = ''
-            document.getElementById('business_cards').innerHTML = ''
-    
-            const businesses = jsonObject ['businesses'];
-            if (format == 'card') {
-                businesses.forEach(displayBusinessCard)
-            } 
-    
-            if (format == 'table'){
-                displayBusinessTable(businesses)
-            }
-        });
+function preloadImage(img) {
+    const src = img.getAttribute('data-src');
+    if(!src) {
+      return;
     }
-    
-    function displayBusinessCard (business) {
-        let card = document.createElement('section');
-        let name = document.createElement('h3');
-        let phonenum = document.createElement('p');
-        let website = document.createElement('p');
-    
-        name.textContent = `${business.name}`;
-        phonenum.textContent = `Phone Number: ${business.phonenum}`;
-        website.textContent = `Website: ${business.website}`;
-    
-        card.setAttribute('class','card');
-    
-        card.appendChild (name);
-        card.appendChild (phonenum);
-        card.appendChild (website);
-    
-    
-        document.querySelector('div.card_container').appendChild(card);
-    }
-    
-    
-    function displayBusinessTable (businesses) {
-        
-        let table = document.createElement('table')
-        let row = table.insertRow();
-        let name = row.insertCell();
-        let phonenum = row.insertCell();
-        let website = row.insertCell();
-        let websiteText = document.createTextNode('Website:')
-        let phonenumText = document.createTextNode('Phone Number:')
-        let nameText = document.createTextNode('Name:')
-    
-        website.appendChild(websiteText)
-        phonenum.appendChild(phonenumText)
-        name.appendChild(nameText)
-    
-        for (b of businesses) {
-            console.log (b)
-            let row = table.insertRow();
-            let name = row.insertCell();
-            let phonenum = row.insertCell();
-            let website = row.insertCell();
-    
-            let websiteText = document.createTextNode(`${b.website}`)
-            let phonenumText = document.createTextNode(`${b.phonenum}`)
-            let nameText = document.createTextNode(`${b.name}`)
-    
-            website.appendChild(websiteText)
-            phonenum.appendChild(phonenumText)
-            name.appendChild(nameText)
-        }
-    
-        document.getElementById('business_table').appendChild(table);
-    }
-          
-    
-    
-    
-    
-    // fetch('businesses.JSON')
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log(data)
-    //         document.querySelector('cards_container').innerText = data.sentence
-    //     })
-    
+  
+    img.src = src;
+  }
+  
+  const images = document.querySelectorAll('[data-src]')
+  
+  const imgOptions = {
+    threshold: 0,
+    rootMargin: '0px 0px -300px 0px'
+  };
+  
+  const imgObserver = new  IntersectionObserver((entries, imgObserver) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        preloadImage(entry.target);
+        imgObserver.unobserve(entry.target);
+      }
+    })
+  }, imgOptions)
+  
+  images.forEach(image => {
+    imgObserver.observe(image);
+  })
+
+//   Everything Else
+
+function change(x) {
+    x.classList.toggle("change");
+  }
+  
+  function hamMenu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+  } 
+  
+  let currentdate = document.lastModified
+  document.write("Last Modified: " +currentdate)

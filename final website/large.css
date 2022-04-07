@@ -62,6 +62,7 @@ font-family: 'Oxygen', sans-serif;
 .topnav a.active {
 display: block;
 align-self: left;
+
 /* background-color: #bedbed; */
 color: black;
 
@@ -69,8 +70,8 @@ color: black;
 
 .topnav .icon {
 display: none;
-}
 
+}
 
 .banner {
 font-family: 'Oxygen', sans-serif;
@@ -129,13 +130,33 @@ width: 100%;
 height: 400px;
 object-fit: cover;
 margin: auto;
-opacity: .8;
+opacity: .7;
 }
 
 .bannerImage:hover {
-opacity: .3; 
-
+opacity: .5; 
 }
+
+.bannerImage2 {
+width: 100%;
+height: 400px;
+object-fit: cover;
+margin: auto;
+opacity: .8;
+}
+
+.bannerImage3 {
+filter: blur(10px);
+-webkit-filter: blur(2px);
+
+width: 100%;
+height: 400px;
+object-fit: cover;
+margin: auto;
+opacity: .7;
+}
+
+
 
 .bodyLinks{
 background-color: #bedbed;
@@ -175,6 +196,7 @@ background-color: #f6f6f6;
 .homeAbout h3 {
 /* background-color: #E0DCDC; */
 margin-top: 10px;
+margin-bottom: 30px;
 padding: 10px;
 font-size: 25px;
 font-family: 'Work Sans', sans-serif;
@@ -184,52 +206,105 @@ text-align: center;
 .homeAbout p {
 /* background-color: #E0DCDC; */
 font-family: 'Spartan', sans-serif;
-text-align: center;
 font-weight: 100;
-padding-left: 70px;
-padding-right: 70px;
+text-align: center;
+
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.bodyContent {
+height: auto;
+}
+
+.bodyContent h1 {
+text-align: center;
+font-family: 'Oxygen', sans-serif;
+font-size: 20px;
+background-color: #adadad1d;
+}
+
+.bodyContent p {
+text-align: center;
+font-family: 'Spartan', sans-serif;
+font-size: 18px;
+padding: 30px;
+background-color: #adadad1d;
+}
+
+
+.cardContent {
+background-image: linear-gradient(to top, rgba(140, 161, 182, 0.375), white);
+padding-bottom: 30px;
+}
+
+.cardContent button {
+padding-bottom: 30px;
+height: 30px;
+justify-content: center;
+display: block;
+
 }
 
 .cards {
-/* margin: auto; */
+margin: auto;
+justify-content: center;
+object-fit: cover;
 display: flex;
 flex-wrap: wrap;
-max-width: 1000px;
+max-width: 100%;
+padding-bottom: 50px;
+
 }
 
+
 .card {
-width: 300px;
-border-radius: 30px;
+width: 100%;
+height: 100%;
+max-height: 300px;
+max-width: 600px;
+object-fit: cover;
+border-radius: 5px;
+margin: 30px;
 text-align: center;
-background-color: rgb(122, 47, 47);
+/* background-color: rgb(122, 47, 47); */
+background-image: linear-gradient(to top, rgba(59, 77, 95, 0.656), white);
 }
 
 .card img:hover {
-opacity: .1;
+opacity: .7;
 }
 
 .card img{
+margin: auto;
 width: 100%;
-height: 200px;
+height: 100%;
+max-height: 300px;
+max-width: 600px;
 object-fit: cover;
-border-top-left-radius: 30px;
-border-top-right-radius: 30px;
+border-radius: 5px;
+/* border-top-left-radius: 30px;
+border-top-right-radius: 30px; */
 }
 
 .card h3{
+text-align: center;
 font-size: 30px;
 font-family: 'Oxygen', sans-serif;
-max-width: 300px;
-color:#E0DCDC;
+/* max-width: 300px; */
+color:#333;
 }
 
 .card p {
-padding: 20px;
 font-family: 'Spartan', sans-serif;
 font-weight: 100;
 background-color:#ffffff;
 border-radius: 3px;
-margin: 10px;
+margin-bottom: 10px;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
+background-image: linear-gradient(to top, rgba(59, 77, 95, 0.656), white);
 }
 
 .cardButton {
@@ -237,11 +312,10 @@ font-family: 'Oxygen', sans-serif;
 background-color: #ffffff;
 border: none;
 /* padding: 15px; */
-margin: 15px;
-
+margin: auto;
 border-radius: 3px;
 text-align: center;
-width: 90px;
+width: 400px;
 height: 20px;
 }
 
@@ -250,3 +324,322 @@ background-color: #E0DCDC;
 }
 
 
+.sampleBanner {
+display: block;
+margin: auto;
+margin-top: 15px;
+max-width: 800px;
+background-color: #bedbed5a;
+padding: 15px;
+
+}
+.sampleBanner h1 {
+font-family: 'Oxygen', sans-serif;
+max-width: 600px;
+display: block;
+margin: auto;
+padding: 15px;
+}
+
+.sampleBanner p {
+font-family: 'Spartan', sans-serif;
+max-width: 400px;
+display: block;
+margin: auto;
+}
+
+/* .sampleCards {
+max-width: 900px;
+} */
+
+.canyon {
+opacity: .9;
+background-image: linear-gradient(to top, rgba(59, 77, 95, 0.087), white);
+padding: 15px;
+margin: 20px;
+border: 1px solid rgba(128, 128, 128, 0.176);
+}
+
+.canyon img{
+margin: auto;
+width: 100%;
+max-height: 300px;
+max-width: 1500px;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.canyon h3 {
+margin-top: 10px;
+margin-bottom: 30px;
+padding: 10px;
+font-size: 40px;
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+}
+
+
+.canyon p {
+font-family: 'Spartan', sans-serif;
+max-width: 600px;
+font-size: 18px;
+display: block;
+margin: auto;
+}
+
+.mist {
+opacity: .9;
+background-image: linear-gradient(to top, rgba(59, 77, 95, 0.087), white);
+padding: 15px;
+margin: 20px;
+border: 1px solid rgba(128, 128, 128, 0.176);
+}
+
+.mist img{
+margin: auto;
+width: 100%;
+max-height: 300px;
+max-width: 1500px;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.mist h3 {
+margin-top: 10px;
+margin-bottom: 30px;
+padding: 10px;
+font-size: 40px;
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+}
+
+.mist p {
+font-family: 'Spartan', sans-serif;
+max-width: 600px;
+font-size: 18px;
+display: block;
+margin: auto;
+}
+
+.arctic {
+opacity: .9;
+background-image: linear-gradient(to top, rgba(59, 77, 95, 0.087), white);
+padding: 15px;
+margin: 20px;
+border: 1px solid rgba(128, 128, 128, 0.176);
+}
+
+.arctic img{
+margin: auto;
+width: 100%;
+max-height: 300px;
+max-width: 1500px;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.arctic h3 {
+margin-top: 10px;
+margin-bottom: 30px;
+padding: 10px;
+font-size: 40px;
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+}
+
+.arctic p {
+font-family: 'Spartan', sans-serif;
+max-width: 600px;
+font-size: 18px;
+display: block;
+margin: auto;
+}
+
+.dune {
+opacity: .9;
+background-image: linear-gradient(to top, rgba(59, 77, 95, 0.087), white);
+padding: 15px;
+margin: 20px;
+border: 1px solid rgba(128, 128, 128, 0.176);
+}
+
+.dune img{
+margin: auto;
+width: 100%;
+max-height: 300px;
+max-width: 1500px;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.dune h3 {
+margin-top: 10px;
+margin-bottom: 30px;
+padding: 10px;
+font-size: 40px;
+font-family: 'Work Sans', sans-serif;
+text-align: center;
+}
+
+.dune p {
+font-family: 'Spartan', sans-serif;
+max-width: 600px;
+font-size: 18px;
+display: block;
+margin: auto;
+}
+
+
+.pluginBanner {
+display: block;
+margin: auto;
+margin: 15px;
+padding: 50px;
+max-width: 800px;
+background-color: #bedbed5a;
+padding: 15px;
+
+}
+
+.listenContent {
+justify-content: center;
+display: block;
+margin: auto;
+}
+
+.listenContent h1 {
+text-align: center;
+font-family: 'Oxygen', sans-serif;
+font-size: 20px;
+background-color: #adadad1d;
+}
+
+.listenContent p {
+text-align: center;
+font-family: 'Spartan', sans-serif;
+font-size: 18px;
+padding: 30px;
+background-color: #adadad1d;
+}
+
+.socialLinks {
+display: block;
+margin: auto;
+text-align: center;
+padding: 20px;
+}
+
+.fa {
+display: block;
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: auto;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.join_form{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+color: white;
+border: 1px solid rgba(128, 128, 128, 0.176);
+width:400px;
+margin: auto;
+text-align: center;
+
+padding: 110px;
+}
+
+.aboutContent {
+    background-image: linear-gradient(to top, #bedbeda4, white);
+}
+
+label {
+color: #393939;
+font-family: 'Oxygen', sans-serif;
+padding: 15px;
+font-size: 20px;
+margin: 20px;
+}
+
+label, input, select {
+text-align: center;
+display: flex;
+margin: auto;
+width: 300px;
+height: 22px;
+padding-top: 5px;
+}
+textarea {
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+#submit {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    justify-content: center;
+display: block;
+margin-bottom: 20px;
+}
+
+.footnote {
+font-family: 'Spartan', sans-serif;
+max-width: 600px;
+font-size: 16px;
+padding: 40px;
+display: block;
+margin: auto;
+
+}
+
+.footer {
+text-align: center;
+}
+
+.footerContent {
+padding-top: 40px;
+/* padding-left: 40px; */
+background-color: #bedbed;
+color: white;
+height: 150px;
+font-family: 'Spartan', sans-serif;
+font-weight: 100;
+}
